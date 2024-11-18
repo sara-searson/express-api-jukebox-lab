@@ -14,7 +14,7 @@ mongoose.connection.on('connected', () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
 
-add.use(cors({ origin: 'http://localhost:5173/' }))
+app.use(cors({ origin: 'http://localhost:5173/' }))
 
 app.use(express.json());
 
